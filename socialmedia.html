@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GenAI x Epistemology Yahvi Agarwal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body style="padding-left: 40px; padding-right: 40px;">
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a href="index.html" class="navbar-brand">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link active" href="genai.html">GenAI</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="projects" id="projects" style="padding-top: 80px; padding-bottom: 80px;">
+        <div class="content-inner">
+            <div class="content-header">
+                <h2>Social Media X Ethics</h2>
+            </div>    
+            <div class="row align-items-center">
+                <div class="col-md-12 text-center">
+                    <p><i class="fa fa-user"></i>This page is under construction</p>
+                    <div class="row align-items-center">
+                        <div class="col-md-12 text-center">
+                            <strong>Link to Bot</strong>  
+                            <img src="img/textpost.jpg" alt="Screenshot of a text post made by my BlueSky Bot."
+                            class="profile-img">
+                            <style>
+                            .profile-img {
+                                padding-top: 80px; 
+                                padding-bottom: 30px;
+                                max-width: 100%;
+                                height: auto;
+                                width: 700px;        
+                                border-radius: 15px;
+                              }
+                              </style>
+                    <p> 
+                    <strong>How I accomplished the post + Design Choices:</strong>  
+                    For the text-only post, I logged into my Bluesky account through the API and published a simple message containing only text. The goal was to demonstrate the most basic functionality: authentication and sending a plain post.
+
+                    Design choice: I kept the format clean and minimal to clearly test that posting worked before adding complexity. With a simple "Hello World".
+
+                            </style>
+                            <img src="img/multimediapost.jpg" alt="Screenshot of a multimedia post."
+                            class="profile-img">
+                            <style>
+                            .profile-img {
+                                padding-top: 80px; 
+                                padding-bottom: 30px;
+                                max-width: 100%;
+                                height: auto;
+                                width: 700px;        
+                                border-radius: 15px;
+                              }
+                            </style>
+                    <p> 
+                        <strong>How I accomplished the post + Design Choices:</strong>  
+                        For the multimedia post, I uploaded an image file and attached it to a post along with a caption. This required first uploading the image to Bluesky and then embedding it in the post.
+
+                        Design choice: I chose to pair the image of a funny meme I found with a short caption "Meme Post". The goal was to test how media is displayed in the feed. 
+                    </p>
+
+                    /style>
+                            <img src="img/likepost.jpg" alt="Screenshot of an interaction with a different user."
+                            class="profile-img">
+                            <style>
+                            .profile-img {
+                                padding-top: 80px; 
+                                padding-bottom: 30px;
+                                max-width: 100%;
+                                height: auto;
+                                width: 700px;        
+                                border-radius: 15px;
+                              }
+                            </style>
+                    <p> 
+                        <strong>How I accomplished the post + Design Choices:</strong>  
+                        For user interaction, I liked another user's post by referencing its unique URI that we got the link to. Instead of manually clicking the like button in the app, I used the post's identifier to send a “like” action through the API.
+
+                        Design choice: Using the URI ensures precision — the program interacts with the exact post intended. I chose to like a post rather than reply to keep the interaction simple while still demonstrating how bots can engage with other users' content. 
+                    </p>
+                    
+                    /style>
+                            <img src="img/BotExternalPackage.jpg" alt="Screenshot of a post made using an external package."
+                            class="profile-img">
+                            <style>
+                            .profile-img {
+                                padding-top: 80px; 
+                                padding-bottom: 30px;
+                                max-width: 100%;
+                                height: auto;
+                                width: 700px;        
+                                border-radius: 15px;
+                              }
+                            </style>
+                    <p> 
+                        <strong>How I accomplished the post + Design Choices:</strong>  
+                        For the external package post, I used the yfinance library to automatically fetch the current AAPL stock price and insert it into the post. Instead of hardcoding a number, the post dynamically generates content based on real-time financial data.
+
+                        Design choice: I chose stock data because it changes daily, which clearly demonstrates automation and real-world API integration. Formatting the output as a simple. It mentions "Today's AAPL price" giving us the neccessary information neatly. 
+                    </p>
+
+
+                    <h3>Reflection: The Nature, Origin, and Limits of Knowledge in GenAI</h3>
+
+                    <p>
+                        The distinction between foundationalism and coherentism significantly shaped my thinking. 
+                        From a foundationalist perspective, knowledge requires basic beliefs grounded in perception or experience. 
+                        LLMs lack experiential grounding; they do not perceive or interact with the world. Instead, they generate 
+                        responses based on statistical patterns in training data. For this reason, they do not possess knowledge 
+                        in the foundationalist sense.
+                        </p>
+                        
+                        <p>
+                        From our in class discussion, what I understand is that Coherentism offers a more complicated view. LLMs often produce highly coherent responses that resemble a web of interconnected beliefs. However, as we learned from the readings on how LLMs work, this coherence is statistical rather than truth-directed. Hallucinations occur because the model predicts likely text continuations, not verified facts. Coherence alone, then, is insufficient for genuine knowledge.
+                        </p>
+                        
+                        <p>
+                        The GPT-4 Capability Forecasting Challenge reinforced this distinction. I was surprised by the model's 
+                        strength in reasoning tasks but also by weaknesses in multi-step planning. The experience showed how 
+                        performance can resemble intelligence without constituting knowledge. The readings on corrupting LLMs 
+                        further revealed how fragile and manipulable these systems can be, raising concerns about epistemic 
+                        reliability.
+                        </p>
+                        
+                        <h4>Lingering Questions</h4>
+                        
+                        <ul>
+                            If AI lacks intentionality, who bears epistemic responsibility for its outputs?
+                            How does interface design influence whether users attribute knowledge to AI?
+                        </ul>
+                        
+                        <h4>References</h4>
+                        
+                        <p>
+                            1.Evans, Richard. n.d. “Foundationalism and Coherentism: An Overview.” Philosophos.org. https://www.philosophos.org/epistemological-theories-foundationalism-and-coherentism.
+                        
+                            
+
+                            2.Riedl, Mark. 2025. “The Intuition behind How Large Language Models Work, Part I.” Medium. August 7, 2025. https://mark-riedl.medium.com/the-intuition-behind-how-large-language-models-work-166cf2fb278a.
+                        </p>
+                
+                        </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    
+    </body>
+    </html>
+  
