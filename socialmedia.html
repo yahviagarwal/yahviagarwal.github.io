@@ -11,16 +11,48 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- CSS Libraries -->
+    <!-- Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Custom Styling -->
+    <style>
+        body {
+            padding-left: 40px;
+            padding-right: 40px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .post-section {
+            margin-bottom: 100px;
+        }
+
+        .post-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .content-header {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .reflection-section {
+            margin-top: 80px;
+        }
+
+        h4 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-<body style="padding-left: 40px; padding-right: 40px;">
 
+<body>
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <a href="index.html" class="navbar-brand">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
@@ -36,139 +68,124 @@
             </ul>
         </div>
     </nav>
-    <div class="projects" id="projects" style="padding-top: 80px; padding-bottom: 80px;">
-        <div class="content-inner">
-            <div class="content-header">
-                <h2>Social Media X Ethics</h2>
-            </div>    
-            <div class="row align-items-center">
-                <div class="col-md-12 text-center">
-                    <p><i class="fa fa-user"></i>This page is under construction</p>
-                    <div class="row align-items-center">
-                        <div class="col-md-12 text-center">
-                            <strong>Link to Bot</strong>  
 
+    <!-- MAIN CONTENT -->
+    <div class="container" style="padding-top: 80px; padding-bottom: 80px;">
 
-                            <img src="img/textpost.jpg" alt="Screenshot of a text post made by my BlueSky Bot."
-                            class="profile-img">
-                            <style>
-                            .profile-img {
-                                padding-top: 80px; 
-                                padding-bottom: 30px;
-                                max-width: 100%;
-                                height: auto;
-                                width: 700px;        
-                                border-radius: 15px;
-                              }
-                              </style>
-                    <p> 
+        <div class="content-header">
+            <h2>Social Media X Ethics</h2>
+            <p><i class="fa fa-user"></i> BlueSky Bot Project</p>
+        </div>
 
-
-                    <strong>How I accomplished the post + Design Choices:</strong>  
-                    For the text-only post, I logged into my Bluesky account through the API and published a simple message containing only text. The goal was to demonstrate the most basic functionality: authentication and sending a plain post.
-
-                    Design choice: I kept the format clean and minimal to clearly test that posting worked before adding complexity. With a simple "Hello World".
-
-                            </style>
-                            <img src="img/multimediapost.jpg" alt="Screenshot of a multimedia post."
-                            class="profile-img">
-                            <style>
-                            .profile-img {
-                                padding-top: 80px; 
-                                padding-bottom: 30px;
-                                max-width: 100%;
-                                height: auto;
-                                width: 700px;        
-                                border-radius: 15px;
-                              }
-                            img.center {
-                                display: block;
-                                margin-left: auto;
-                                margin-right: auto;
-                                }
-                            </style>
-                    <p> 
-                        <strong>How I accomplished the post + Design Choices:</strong>  
-                        For the multimedia post, I uploaded an image file and attached it to a post along with a caption. This required first uploading the image to Bluesky and then embedding it in the post.
-
-                        Design choice: I chose to pair the image of a funny meme I found with a short caption "Meme Post". The goal was to test how media is displayed in the feed. 
-                    </p>
-
-
-                    /style>
-                            <img src="img/likepost.jpg" alt="Screenshot of an interaction with a different user."
-                            class="profile-img">
-                            <style>
-                            .profile-img {
-                                padding-top: 80px; 
-                                padding-bottom: 30px;
-                                max-width: 100%;
-                                height: auto;
-                                width: 700px;        
-                                border-radius: 15px;
-                              }
-                            </style>
-                    <p> 
-                        <strong>How I accomplished the post + Design Choices:</strong>  
-                        For user interaction, I liked another user's post by referencing its unique URI that we got the link to. Instead of manually clicking the like button in the app, I used the post's identifier to send a “like” action through the API.
-
-                        Design choice: Using the URI ensures precision — the program interacts with the exact post intended. I chose to like a post rather than reply to keep the interaction simple while still demonstrating how bots can engage with other users' content. 
-                    </p>
-                            <img src="img/BotExternalPackage.jpg" alt="Screenshot of a post made using an external package."
-                            class="profile-img">
-                            <style>
-                            .profile-img {
-                                padding-top: 80px; 
-                                padding-bottom: 30px;
-                                max-width: 100%;
-                                height: auto;
-                                width: 700px;        
-                                border-radius: 15px;
-                              }
-                            </style>
-                    <p> 
-                        <strong>How I accomplished the post + Design Choices:</strong>  
-                        For the external package post, I used the yfinance library to automatically fetch the current AAPL stock price and insert it into the post. Instead of hardcoding a number, the post dynamically generates content based on real-time financial data.
-
-                        Design choice: I chose stock data because it changes daily, which clearly demonstrates automation and real-world API integration. Formatting the output as a simple. It mentions "Today's AAPL price" giving us the neccessary information neatly. 
-                    </p>
-
-
-                    <h3>Reflection: In class discussion and Pre class Readings</h3>
-
-                    <p>
-                        One discussion question that significantly shaped my thinking was: “Is a bot inherently deceptive, or does its morality depend on how it is designed and disclosed?” That question pushed me to move beyond the assumption that automation is automatically unethical. Instead, I began to see morality as dependent on transparency and intent. For example, a bot that clearly identifies itself and shares useful information (like stock prices) feels very different from a bot that pretends to be human to influence opinions. The design choice of disclosure became central to how I think about ethical responsibility.
-                        </p>
-                        
-                        <p>
-                        Another discussion question that influenced me was: “Should bots have the same participation rights as human users?” This made me think about fairness and scale. When I programmatically liked someone's post using its URI, I realized how easily engagement can be automated. If scaled up, bots could artificially amplify content in ways humans cannot match. That raised concerns about whether automation distorts public discourse, even if actions such as a single “like” seems harmless.
-                        </p>
-                        
-                        <p>
-                        The reading Do Social Media Bots Dream of Electric Sheep? helped me understand that bots are not one single type of actor. In the Introduction and Section 4, the authors categorize bots into different types, including benign informational bots and malicious influence bots. This categorization shaped my thinking because it framed morality as contextual rather than binary. A stock-price bot that shares accurate financial data serves an informational purpose, while a bot designed to spread misinformation operates very differently—even if both use similar technical structures. The reading made me realize that ethical evaluation depends on function and impact, not just on whether something is automated. Ultimately, building and reflecting on my own bot made morality feel less abstract. Ethical considerations are embedded in everyday design choices—what data is used, how posts are formatted, whether automation is disclosed, and how interaction is scaled.
-                        </p>
-                        
-                        <h4>Lingering Questions</h4>
-                        
-                        <ul>
-                        A lingering question is whether platforms should require mandatory bot labeling. Transparency seems ethically preferable, but enforcement may be difficult, especially with malicious actors. This creates tension between ethical ideals and what we can actually implement.
-                        </ul>
-                        
-                        <h4>References</h4>
-                        
-                        <p>
-                            1.Stieglitz, Stefan . 2017. “Do Social Bots Dream of Electric Sheep?” Australasian Conference on Information Systems.
-
-                            2.“Social Media, Ethics, and Automation.” 2023. Social Media, Ethics, and Automation. 2023. https://social-media-ethics-automation.github.io/book/bsky/intro.html#.
-                        </p>
-                
-                        </div>
+        <!-- TEXT POST -->
+        <div class="row post-section align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="img/textpost.jpg" alt="Text Post Screenshot" class="post-img">
+            </div>
+            <div class="col-md-6">
+                <h4>Text-Only Post</h4>
+                <p><strong>How I accomplished the post:</strong></p>
+                <p>
+                    I logged into my Bluesky account through the API and published a simple text message.
+                    This demonstrated authentication and the ability to send a plain post.
+                </p>
+                <p><strong>Design Choice:</strong> I kept it minimal with a simple "Hello World"
+                    to verify functionality before adding complexity.</p>
             </div>
         </div>
+
+        <!-- MULTIMEDIA POST -->
+        <div class="row post-section align-items-center">
+            <div class="col-md-6">
+                <h4>Multimedia Post</h4>
+                <p><strong>How I accomplished the post:</strong></p>
+                <p>
+                    I uploaded an image file to Bluesky and attached it to a post with a caption.
+                    This required uploading the image first, then embedding it into the post record.
+                </p>
+                <p><strong>Design Choice:</strong> I paired a meme image with a short caption
+                    to test how media renders in the feed.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/multimediapost.jpg" alt="Multimedia Post Screenshot" class="post-img">
+            </div>
+        </div>
+
+        <!-- LIKE POST -->
+        <div class="row post-section align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="img/likepost.jpg" alt="Like Post Screenshot" class="post-img">
+            </div>
+            <div class="col-md-6">
+                <h4>User Interaction (Like)</h4>
+                <p><strong>How I accomplished the interaction:</strong></p>
+                <p>
+                    I liked another user’s post by referencing its unique URI and sending a “like”
+                    action through the API instead of manually clicking the button.
+                </p>
+                <p><strong>Design Choice:</strong> Using the URI ensures precision.
+                    I chose liking instead of replying to demonstrate interaction while keeping it simple.</p>
+            </div>
+        </div>
+
+        <!-- EXTERNAL PACKAGE POST -->
+        <div class="row post-section align-items-center">
+            <div class="col-md-6">
+                <h4>External Package Integration</h4>
+                <p><strong>How I accomplished the post:</strong></p>
+                <p>
+                    I used the yfinance library to fetch the current AAPL stock price and dynamically
+                    insert it into the post. Instead of hardcoding a value, the content updates automatically.
+                </p>
+                <p><strong>Design Choice:</strong> Stock data changes daily, clearly demonstrating automation
+                    and real-world API integration.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/BotExternalPackage.jpg" alt="External Package Post Screenshot" class="post-img">
+            </div>
+        </div>
+
+        <!-- REFLECTION -->
+        <div class="reflection-section">
+            <h3>Reflection: In-Class Discussion & Pre-Class Readings</h3>
+
+            <p>
+                One discussion question that shaped my thinking was whether a bot is inherently deceptive,
+                or whether morality depends on its design and disclosure. This shifted my thinking toward
+                transparency and intent. A clearly labeled informational bot feels ethically different
+                from one pretending to be human.
+            </p>
+
+            <p>
+                Another discussion focused on whether bots should have equal participation rights as humans.
+                Automating a “like” showed me how easily engagement can scale. While a single action seems
+                harmless, automation at scale can distort public discourse.
+            </p>
+
+            <p>
+                The reading <em>Do Social Media Bots Dream of Electric Sheep?</em> helped me see that bots
+                vary widely in function. Informational bots and malicious influence bots may share technical
+                structures but differ ethically based on impact and intent.
+            </p>
+
+            <h4>Lingering Question</h4>
+            <p>
+                Should platforms require mandatory bot labeling? Transparency seems ethically ideal,
+                but enforcement is difficult, especially with malicious actors.
+            </p>
+
+            <h4>References</h4>
+            <ol>
+                <li>Stieglitz, Stefan. 2017. “Do Social Bots Dream of Electric Sheep?” Australasian Conference on Information Systems.</li>
+                <li>“Social Media, Ethics, and Automation.” 2023. https://social-media-ethics-automation.github.io/book/bsky/intro.html</li>
+            </ol>
+        </div>
+
     </div>
+
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    
-    </body>
-    </html>
-  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
