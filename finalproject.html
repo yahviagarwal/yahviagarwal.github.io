@@ -134,69 +134,74 @@
             <div class="col-md-6 text-center">
                 <p><strong>Multimedia Demonstration</strong></p>
                 <img src="img/swipe.jpg" alt="Tinder Swipe Page Screenshot" class="post-img">
-                <img src="img/vri.jpg" alt="Variable Reinforcement Rate Page Screenshot" class="post-img">
-                <video controls aria-label="Video demonstration of the Tinder algorithm prototype showing swipe interactions and match logic">
+                <img src="img/vri.jpg" alt="Variable Rate Reinforcement Page Screenshot" class="post-img">
+                <video controls aria-label="Video demonstration of the Tinder algorithm prototype showing swipe interactions and variable rate reinforcement">
                     <source src="img/prototypevideo.mp4" type="video/mp4">
                  </video>
-            </div>
-            <div class="col-md-6">
-                <h4>User Interaction (Like)</h4>
-                <p><strong>How I accomplished the interaction:</strong></p>
+                
+                <h4>Prototype Implementation</h4>
                 <p>
-                    I liked another user's post by referencing its unique URI and sending a “like”
-                    action through the API instead of manually clicking the button.
-                </p>
-                <p><strong>Design Choice:</strong> Using the URI ensures precision.
-                    I chose liking instead of replying to demonstrate interaction while keeping it simple.</p>
-            </div>
+                The technical exploration for this project involved examining how swipe-based recommendation systems function. We built a simplified prototype that simulates the swipe interface and demonstrates how user actions generate data used for recommendations.
+            
+                The full project code is available on GitHub:</p>
+                <li>https://github.com/norawoots/cs302-final-tinderapp.git</li>
         </div>
         <div class="row post-section align-items-center">
             <div class="col-md-6">
-                <h4>External Package Integration</h4>
-                <p><strong>How I accomplished the post:</strong></p>
+                <h4>Deconstruction - Philosophical Reflection</h4>
+                <p><strong>Metaphysical Questions About Dating Algorithms</strong></p>
                 <p>
-                    I used the yfinance library to fetch the current AAPL stock price and dynamically
-                    insert it into the post. Instead of hardcoding a value, the content updates automatically.
+                One philosophical framework that shaped our thinking about dating apps is metaphysics, particularly questions about the nature of love and connection.
+
+                Dating apps attempt to quantify compatibility using measurable attributes such as interests, location, age, and communication style. However, metaphysical discussions of love suggest that these concepts are much more complex.
+
+                For example, classical philosophical discussions distinguish between different forms of love: Eros (romantic or passionate love), Philia (friendship and companionship), Agape (unconditional or universal love)
+                
+                Dating algorithms attempt to model compatibility mathematically, but these philosophical perspectives raise questions about whether something as complex as love can be reduced to data points. If we cannot clearly define what creates love or long-term connection, it becomes difficult to determine whether an algorithm can successfully predict it.
                 </p>
-                <p><strong>Design Choice:</strong> Stock data changes daily, clearly demonstrating automation
-                    and real-world API integration.</p>
-            </div>
-            <div class="col-md-6 text-center">
-                <img src="img/BotExternalPackage.jpg" alt="External Package Post Screenshot" class="post-img">
+                <p><h4>Discussion Questions from our Presentation:</h4></p>
+                <p>
+                Why do relationships that begin on dating apps sometimes carry social stigma?
+
+                Is a relationship formed through an algorithm less authentic than one formed through a chance meeting?
+                    
+                Have dating apps changed how people think about love and compatibility?
+                    
+                Does the concept of an algorithmic “match” influence how users evaluate potential partners?
+                    
+                If every profile on Tinder resulted in a match, would users continue using the app?</p>
+                <p><h4>Reflection on In-Class Discussion</h4></p>
+                <p>
+                Leading the discussion helped us think more critically about the relationship between algorithms and human connection.
+
+                One point raised in class during discussion was that dating apps may not actually create connections but instead increase the probability of meeting people who might otherwise never cross paths. This idea reframed our thinking about the role of the algorithm. Rather than directly forming relationships, the algorithm functions more like a filter that expands who we interact with.
+                    
+                Someone else mentioned that dating apps change users' expectations of relationships by giving an endless stream of potential matches. This can create the perception that there is always someone better available, which may influence how users evaluate partners.
+                    
+                These discussions highlighted that the impact of dating apps may not lie solely in their algorithms, but in how they reshape social norms around relationships and compatibility.</p>
             </div>
         </div>
         <div class="reflection-section">
-            <h3>Reflection: In-Class Discussion & Pre-Class Readings</h3>
-
+            <h3>Philosophical Framework NOT Covered in Classs</h3>
             <p>
-                One discussion question that shaped my thinking was whether a bot is inherently deceptive,
-                or whether morality depends on its design and disclosure. This shifted my thinking toward
-                transparency and intent. A clearly labeled informational bot feels ethically different
-                from one pretending to be human.
-            </p>
+            One philosophical perspective that extends this discussion is existentialism, particularly the idea that meaning is created through human choice rather than predetermined systems.
 
+            From an existentialist perspective, algorithms cannot determine meaningful relationships because meaning emerges through lived experiences and individual decisions. Even if an algorithm identifies statistically compatible individuals, the outcome of the relationship ultimately depends on the choices and interactions of the people involved.
+                
+            This perspective suggests that while algorithms may help initiate encounters, they cannot replace the human process of creating meaning within relationships.
+            </p>
+            <h3>Reflection on Other Students' Projects</h3>
             <p>
-                Another discussion focused on whether bots should have equal participation rights as humans.
-                Automating a “like” showed me how easily engagement can scale. While a single action seems
-                harmless, automation at scale can distort public discourse.
-            </p>
+                Other projects presented in class also influenced how I thought about everyday technology. One example was the project on the Oura Ring, which explored how wearable devices collect data and use models to interpret user movement and activity patterns. The project explained how the device builds a model to track movement and estimate things like sleep quality, steps, and overall health.
 
-            <p>
-                The reading <em>Do Social Media Bots Dream of Electric Sheep?</em> helped me see that bots
-                vary widely in function. Informational bots and malicious influence bots may share technical
-                structures but differ ethically based on impact and intent.
-            </p>
+                This made me think about how everyday technologies increasingly rely on data modeling to interpret human behavior. In the case of the Oura Ring, the system collects physical data such as movement and heart rate and uses algorithms to convert those signals into meaningful metrics about health. Similarly, Tinder's algorithm collects behavioral data such as swipes, matches, and profile interactions to build a model of user preferences.
 
-            <h4>Lingering Question</h4>
-            <p>
-                Should platforms require mandatory bot labeling? Transparency seems ethically ideal,
-                but enforcement is difficult, especially with malicious actors.
+                Seeing the Oura Ring project highlighted how different technologies rely on similar computational ideas: turning human behavior into data that can be analyzed and predicted. However, it also made me think about the differences in purpose.
             </p>
-
-            <h4>References</h4>
+            <h4>Citations</h4>
             <ol>
-                <li>Stieglitz, Stefan. 2017. “Do Social Bots Dream of Electric Sheep?” Australasian Conference on Information Systems.</li>
-                <li>“Social Media, Ethics, and Automation.” 2023. https://social-media-ethics-automation.github.io/book/bsky/intro.html</li>
+                <li>Wordie, Fred. 2020. “An Unscientific Investigation of Tinder's Algorithm.” Medium. AIxDESIGN. September 9, 2020. https://medium.com/aixdesign/an-unscientific-investigation-of-tinders-algorithm-2c086bf3deb4.</li>
+                <li>Spinney, Laura. 2024. “'The Science Isn't There': Do Dating Apps Really Help Us Find Our Soulmate?” The Observer, April 28, 2024, sec. Technology. https://www.theguardian.com/technology/2024/apr/28/the-science-isnt-there-do-dating-apps-really-help-us-find-our-soulmate.</li>
             </ol>
         </div>
 
