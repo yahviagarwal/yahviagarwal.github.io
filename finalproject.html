@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GenAI x Epistemology Yahvi Agarwal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-left: 40px;
+            padding-right: 40px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .post-section {
+            margin-bottom: 100px;
+        }
+
+        .post-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .content-header {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .reflection-section {
+            margin-top: 80px;
+        }
+
+        h4 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a href="index.html" class="navbar-brand">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link active" href="genai.html">GenAI</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container" style="padding-top: 80px; padding-bottom: 80px;">
+
+        <div class="content-header">
+            <h2>Final Project</h2>
+        </div>
+        <div class="row post-section align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="img/textpost.jpg" alt="Text Post Screenshot" class="post-img">
+            </div>
+            <div class="col-md-6">
+                <h4>Project Overview</h4>
+                <p><strong>How I accomplished the post:</strong></p>
+                <p>
+                This project explores the technology behind dating apps, specifically Tinder's recommendation algorithm and how it keeps users engaged through behavioral reinforcement. Dating apps are a form of everyday technology that millions of people interact with daily, yet the mechanisms behind them are often invisible to users.
+
+                Tinder operates through a swipe-based interface where users swipe right to like someone or left to pass. When two users swipe right on each other, they form a match and can begin messaging. Behind this simple interface lies a recommendation system that determines which profiles are shown to users. The algorithm uses information such as location, user activity, and previous swiping behavior to predict which profiles a user is most likely to engage with.
+
+                This project examines two major aspects of Tinder's technology:
+                </p>
+                <p><strong>The recommendation algorithm (TinVec):</strong> Algorithm that learns user preferences using machine learning.
+
+                    strong>Variable rate reinforcement: </strong> A behavioral design strategy that keeps users swiping by delivering rewards (matches) unpredictably.
+                    
+                    Together, these systems shape how people interact with the platform and influence how users perceive dating and connection in the digital age.</p>
+            </div>
+        </div>
+        <div class="row post-section align-items-center">
+            <div class="col-md-6">
+                <h4>Core Technical Concept</h4>
+                <p><strong>Tinder's Recommendation Algorithm (TinVec)</strong></p>
+                <p>
+                Tinder uses a machine learning recommendation system called TinVec. This system converts user behavior into mathematical data representations called vectors.
+
+                Every time a user interacts with the app, data points are generated. These include:
+
+                Swiping behavior (likes and passes)
+
+                Profile information (bio, interests, photos)
+
+                Activity level
+
+                Geographic proximity to other users
+
+                TinVec transforms this information into vectors that represent user preferences and characteristics. When two users have vectors that are close together in this multidimensional space, the algorithm considers them more compatible and is more likely to show them to each other.
+
+                The system also analyzes language in user profiles using techniques similar to Word2Vec, allowing it to identify similarities in communication style or interests.
+
+                As users continue swiping, the algorithm continuously updates its understanding of their preferences and refines the profiles it recommends.
+                </p>
+                <p><strong>Variable Rate Reinforcement</strong></p>
+                <p> Another key technical concept behind dating apps is variable rate reinforcement, a principle from behavioral psychology.
+
+                In a variable reinforcement schedule:
+                    
+                Rewards are delivered unpredictably.
+                    
+                Users do not know when the next reward will occur.
+                    
+                On Tinder, the reward is a match or a right swipe from another user.
+                    
+                Instead of receiving matches at predictable intervals, users receive them at irregular times. This unpredictability increases engagement because the brain releases more dopamine when rewards are uncertain.
+                    
+                This mechanism is similar to the reinforcement patterns used in slot machines, where unpredictable rewards keep people playing longer.
+                    
+                In the context of dating apps, this design encourages users to keep swiping in anticipation of the next match. </p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/multimediapost.jpg" alt="Multimedia Post Screenshot" class="post-img">
+            </div>
+        </div>
+        <div class="row post-section align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="img/likepost.jpg" alt="Like Post Screenshot" class="post-img">
+            </div>
+            <div class="col-md-6">
+                <h4>User Interaction (Like)</h4>
+                <p><strong>How I accomplished the interaction:</strong></p>
+                <p>
+                    I liked another user’s post by referencing its unique URI and sending a “like”
+                    action through the API instead of manually clicking the button.
+                </p>
+                <p><strong>Design Choice:</strong> Using the URI ensures precision.
+                    I chose liking instead of replying to demonstrate interaction while keeping it simple.</p>
+            </div>
+        </div>
+        <div class="row post-section align-items-center">
+            <div class="col-md-6">
+                <h4>External Package Integration</h4>
+                <p><strong>How I accomplished the post:</strong></p>
+                <p>
+                    I used the yfinance library to fetch the current AAPL stock price and dynamically
+                    insert it into the post. Instead of hardcoding a value, the content updates automatically.
+                </p>
+                <p><strong>Design Choice:</strong> Stock data changes daily, clearly demonstrating automation
+                    and real-world API integration.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="img/BotExternalPackage.jpg" alt="External Package Post Screenshot" class="post-img">
+            </div>
+        </div>
+        <div class="reflection-section">
+            <h3>Reflection: In-Class Discussion & Pre-Class Readings</h3>
+
+            <p>
+                One discussion question that shaped my thinking was whether a bot is inherently deceptive,
+                or whether morality depends on its design and disclosure. This shifted my thinking toward
+                transparency and intent. A clearly labeled informational bot feels ethically different
+                from one pretending to be human.
+            </p>
+
+            <p>
+                Another discussion focused on whether bots should have equal participation rights as humans.
+                Automating a “like” showed me how easily engagement can scale. While a single action seems
+                harmless, automation at scale can distort public discourse.
+            </p>
+
+            <p>
+                The reading <em>Do Social Media Bots Dream of Electric Sheep?</em> helped me see that bots
+                vary widely in function. Informational bots and malicious influence bots may share technical
+                structures but differ ethically based on impact and intent.
+            </p>
+
+            <h4>Lingering Question</h4>
+            <p>
+                Should platforms require mandatory bot labeling? Transparency seems ethically ideal,
+                but enforcement is difficult, especially with malicious actors.
+            </p>
+
+            <h4>References</h4>
+            <ol>
+                <li>Stieglitz, Stefan. 2017. “Do Social Bots Dream of Electric Sheep?” Australasian Conference on Information Systems.</li>
+                <li>“Social Media, Ethics, and Automation.” 2023. https://social-media-ethics-automation.github.io/book/bsky/intro.html</li>
+            </ol>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
