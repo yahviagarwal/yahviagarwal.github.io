@@ -1,213 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>GenAI x Epistemology Yahvi Agarwal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>GenAI x Epistemology Yahvi Agarwal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="img/favicon.ico" rel="icon">
+<link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            padding-left: 40px;
-            padding-right: 40px;
-            font-family: 'Open Sans', sans-serif;
-        }
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-        .post-section {
-            margin-bottom: 100px;
-        }
+<style>
 
-        .post-img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
-        }
+body{
+padding-left:40px;
+padding-right:40px;
+font-family:'Open Sans',sans-serif;
+}
 
-        .content-header {
-            margin-bottom: 60px;
-            text-align: center;
-        }
+.post-section{
+margin-bottom:100px;
+}
 
-        .reflection-section {
-            margin-top: 80px;
-        }
+.post-img{
+max-width:100%;
+height:auto;
+border-radius:15px;
+box-shadow:0px 10px 25px rgba(0,0,0,0.1);
+margin-bottom:20px;
+}
 
-        h4 {
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-    </style>
+.content-header{
+margin-bottom:60px;
+text-align:center;
+}
+
+.reflection-section{
+margin-top:80px;
+}
+
+h4{
+font-weight:700;
+margin-bottom:20px;
+}
+
+video{
+width:100%;
+max-width:600px;
+margin-top:20px;
+border-radius:10px;
+}
+
+</style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a href="index.html" class="navbar-brand">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link active" href="genai.html">GenAI</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container" style="padding-top: 80px; padding-bottom: 80px;">
 
-        <div class="content-header">
-            <h2>Final Project</h2>
-        </div>
-        <div class="row post-section align-items-center">
-            <div class="col-md-6 text-center">
-                <img src="img/textpost.jpg" alt="Text Post Screenshot" class="post-img">
-            </div>
-            <div class="col-md-6">
-                <h4>Project Overview</h4>
-                <p><strong>How I accomplished the post:</strong></p>
-                <p>
-                This project explores the technology behind dating apps, specifically Tinder's recommendation algorithm and how it keeps users engaged through behavioral reinforcement. Dating apps are a form of everyday technology that millions of people interact with daily, yet the mechanisms behind them are often invisible to users.
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<a href="index.html" class="navbar-brand">Home</a>
 
-                Tinder operates through a swipe-based interface where users swipe right to like someone or left to pass. When two users swipe right on each other, they form a match and can begin messaging. Behind this simple interface lies a recommendation system that determines which profiles are shown to users. The algorithm uses information such as location, user activity, and previous swiping behavior to predict which profiles a user is most likely to engage with.
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-                This project examines two major aspects of Tinder's technology:
-                </p>
-                <p><strong>The recommendation algorithm (TinVec):</strong> Algorithm that learns user preferences using machine learning.
+<div class="collapse navbar-collapse" id="navbarCollapse">
+<ul class="nav navbar-nav">
 
-                    strong>Variable rate reinforcement: </strong> A behavioral design strategy that keeps users swiping by delivering rewards (matches) unpredictably.
+<li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html#experience">Experience</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+<li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+<li class="nav-item"><a class="nav-link active" href="genai.html">GenAI</a></li>
+
+</ul>
+</div>
+</nav>
+
+
+<div class="container" style="padding-top:80px;padding-bottom:80px;">
+
+<div class="content-header">
+<h2>Final Project</h2>
+</div>
+
+
+<div class="row post-section align-items-center">
+
+<div class="col-md-6 text-center">
+<img src="img/textpost.jpg" alt="Text Post Screenshot" class="post-img">
+</div>
+
+<div class="col-md-6">
+
+<h4>Project Overview</h4>
+
+<p><strong>How I accomplished the post:</strong></p>
+
+<p>
+This project explores the technology behind dating apps, specifically Tinder's recommendation algorithm and how it keeps users engaged through behavioral reinforcement. Dating apps are a form of everyday technology that millions of people interact with daily, yet the mechanisms behind them are often invisible to users.
+
+Tinder operates through a swipe-based interface where users swipe right to like someone or left to pass. When two users swipe right on each other, they form a match and can begin messaging. Behind this simple interface lies a recommendation system that determines which profiles are shown to users. The algorithm uses information such as location, user activity, and previous swiping behavior to predict which profiles a user is most likely to engage with.
+
+This project examines two major aspects of Tinder's technology:
+</p>
+
+<p><strong>The recommendation algorithm (TinVec):</strong> Algorithm that learns user preferences using machine learning.
+
+strong>Variable rate reinforcement: </strong> A behavioral design strategy that keeps users swiping by delivering rewards (matches) unpredictably.
                     
-                    Together, these systems shape how people interact with the platform and influence how users perceive dating and connection in the digital age.</p>
-            </div>
-        </div>
-        <div class="row post-section align-items-center">
-            <div class="col-md-6">
-                <h4>Core Technical Concept</h4>
-                <p><strong>Tinder's Recommendation Algorithm (TinVec)</strong></p>
-                <p>
-                Tinder uses a machine learning recommendation system called TinVec. This system converts user behavior into mathematical data representations called vectors.
+Together, these systems shape how people interact with the platform and influence how users perceive dating and connection in the digital age.</p>
 
-                Every time a user interacts with the app, data points are generated. These include:
+</div>
+</div>
 
-                Swiping behavior (likes and passes)
 
-                Profile information (bio, interests, photos)
+<div class="row post-section">
 
-                Activity level
+<div class="col-md-8">
 
-                Geographic proximity to other users
+<h4>Core Technical Concept</h4>
 
-                TinVec transforms this information into vectors that represent user preferences and characteristics. When two users have vectors that are close together in this multidimensional space, the algorithm considers them more compatible and is more likely to show them to each other.
+<p><strong>Tinder's Recommendation Algorithm (TinVec)</strong></p>
 
-                The system also analyzes language in user profiles using techniques similar to Word2Vec, allowing it to identify similarities in communication style or interests.
+<p>
+Tinder uses a machine learning recommendation system called TinVec. This system converts user behavior into mathematical data representations called vectors.
 
-                As users continue swiping, the algorithm continuously updates its understanding of their preferences and refines the profiles it recommends.
-                </p>
-                <p><strong>Variable Rate Reinforcement</strong></p>
-                <p> Another key technical concept behind dating apps is variable rate reinforcement, a principle from behavioral psychology.
+Every time a user interacts with the app, data points are generated. These include:
 
-                In a variable reinforcement schedule:
+Swiping behavior (likes and passes)
+
+Profile information (bio, interests, photos)
+
+Activity level
+
+Geographic proximity to other users
+
+TinVec transforms this information into vectors that represent user preferences and characteristics. When two users have vectors that are close together in this multidimensional space, the algorithm considers them more compatible and is more likely to show them to each other.
+
+The system also analyzes language in user profiles using techniques similar to Word2Vec, allowing it to identify similarities in communication style or interests.
+
+As users continue swiping, the algorithm continuously updates its understanding of their preferences and refines the profiles it recommends.
+</p>
+
+<p><strong>Variable Rate Reinforcement</strong></p>
+
+<p> Another key technical concept behind dating apps is variable rate reinforcement, a principle from behavioral psychology.
+
+In a variable reinforcement schedule:
                     
-                Rewards are delivered unpredictably.
+Rewards are delivered unpredictably.
                     
-                Users do not know when the next reward will occur.
+Users do not know when the next reward will occur.
                     
-                On Tinder, the reward is a match or a right swipe from another user.
+On Tinder, the reward is a match or a right swipe from another user.
                     
-                Instead of receiving matches at predictable intervals, users receive them at irregular times. This unpredictability increases engagement because the brain releases more dopamine when rewards are uncertain.
+Instead of receiving matches at predictable intervals, users receive them at irregular times. This unpredictability increases engagement because the brain releases more dopamine when rewards are uncertain.
                     
-                This mechanism is similar to the reinforcement patterns used in slot machines, where unpredictable rewards keep people playing longer.
+This mechanism is similar to the reinforcement patterns used in slot machines, where unpredictable rewards keep people playing longer.
                     
-                In the context of dating apps, this design encourages users to keep swiping in anticipation of the next match. </p>
-            </div>
-        </div>
-        <div class="row post-section align-items-center">
-            <div class="col-md-6 text-center">
-                <p><strong>Multimedia Demonstration</strong></p>
-                <img src="img/swipe.jpg" alt="Tinder Swipe Page Screenshot" class="post-img">
-                <img src="img/vri.jpg" alt="Variable Rate Reinforcement Page Screenshot" class="post-img">
-                <video controls aria-label="Video demonstration of the Tinder algorithm prototype showing swipe interactions and variable rate reinforcement">
-                    <source src="img/prototypevideo.mp4" type="video/mp4">
-                 </video>
+In the context of dating apps, this design encourages users to keep swiping in anticipation of the next match. </p>
+
+</div>
+</div>
+
+
+<div class="row post-section">
+
+<div class="col-md-8 text-center">
+
+<p><strong>Multimedia Demonstration</strong></p>
+
+<img src="img/swipe.jpg" alt="Tinder Swipe Page Screenshot" class="post-img">
+<img src="img/vri.jpg" alt="Variable Rate Reinforcement Page Screenshot" class="post-img">
+
+<video controls aria-label="Video demonstration of the Tinder algorithm prototype showing swipe interactions and variable rate reinforcement">
+<source src="img/prototypevideo.mp4" type="video/mp4">
+</video>
+
+<h4>Prototype Implementation</h4>
+
+<p>
+The technical exploration for this project involved examining how swipe-based recommendation systems function. We built a simplified prototype that simulates the swipe interface and demonstrates how user actions generate data used for recommendations.
+
+The full project code is available on GitHub:</p>
+
+<ul>
+<li><a href="https://github.com/norawoots/cs302-final-tinderapp.git">https://github.com/norawoots/cs302-final-tinderapp.git</a></li>
+</ul>
+
+</div>
+</div>
+
+
+<div class="row post-section">
+
+<div class="col-md-8">
+
+<h4>Deconstruction - Philosophical Reflection</h4>
+
+<p><strong>Metaphysical Questions About Dating Algorithms</strong></p>
+
+<p>
+One philosophical framework that shaped our thinking about dating apps is metaphysics, particularly questions about the nature of love and connection.
+
+Dating apps attempt to quantify compatibility using measurable attributes such as interests, location, age, and communication style. However, metaphysical discussions of love suggest that these concepts are much more complex.
+
+For example, classical philosophical discussions distinguish between different forms of love: Eros (romantic or passionate love), Philia (friendship and companionship), Agape (unconditional or universal love)
                 
-                <h4>Prototype Implementation</h4>
-                <p>
-                The technical exploration for this project involved examining how swipe-based recommendation systems function. We built a simplified prototype that simulates the swipe interface and demonstrates how user actions generate data used for recommendations.
-            
-                The full project code is available on GitHub:</p>
-                <li>https://github.com/norawoots/cs302-final-tinderapp.git</li>
-        </div>
-        <div class="row post-section align-items-center">
-            <div class="col-md-6">
-                <h4>Deconstruction - Philosophical Reflection</h4>
-                <p><strong>Metaphysical Questions About Dating Algorithms</strong></p>
-                <p>
-                One philosophical framework that shaped our thinking about dating apps is metaphysics, particularly questions about the nature of love and connection.
+Dating algorithms attempt to model compatibility mathematically, but these philosophical perspectives raise questions about whether something as complex as love can be reduced to data points. If we cannot clearly define what creates love or long-term connection, it becomes difficult to determine whether an algorithm can successfully predict it.
+</p>
 
-                Dating apps attempt to quantify compatibility using measurable attributes such as interests, location, age, and communication style. However, metaphysical discussions of love suggest that these concepts are much more complex.
+<p><h4>Discussion Questions from our Presentation:</h4></p>
 
-                For example, classical philosophical discussions distinguish between different forms of love: Eros (romantic or passionate love), Philia (friendship and companionship), Agape (unconditional or universal love)
+<p>
+Why do relationships that begin on dating apps sometimes carry social stigma?
+
+Is a relationship formed through an algorithm less authentic than one formed through a chance meeting?
+                    
+Have dating apps changed how people think about love and compatibility?
+                    
+Does the concept of an algorithmic “match” influence how users evaluate potential partners?
+                    
+If every profile on Tinder resulted in a match, would users continue using the app?</p>
+
+<p><h4>Reflection on In-Class Discussion</h4></p>
+
+<p>
+Leading the discussion helped us think more critically about the relationship between algorithms and human connection.
+
+One point raised in class during discussion was that dating apps may not actually create connections but instead increase the probability of meeting people who might otherwise never cross paths. This idea reframed our thinking about the role of the algorithm. Rather than directly forming relationships, the algorithm functions more like a filter that expands who we interact with.
+                    
+Someone else mentioned that dating apps change users' expectations of relationships by giving an endless stream of potential matches. This can create the perception that there is always someone better available, which may influence how users evaluate partners.
+                    
+These discussions highlighted that the impact of dating apps may not lie solely in their algorithms, but in how they reshape social norms around relationships and compatibility.</p>
+
+</div>
+</div>
+
+
+<div class="reflection-section">
+
+<h3>Philosophical Framework NOT Covered in Classs</h3>
+
+<p>
+One philosophical perspective that extends this discussion is existentialism, particularly the idea that meaning is created through human choice rather than predetermined systems.
+
+From an existentialist perspective, algorithms cannot determine meaningful relationships because meaning emerges through lived experiences and individual decisions. Even if an algorithm identifies statistically compatible individuals, the outcome of the relationship ultimately depends on the choices and interactions of the people involved.
                 
-                Dating algorithms attempt to model compatibility mathematically, but these philosophical perspectives raise questions about whether something as complex as love can be reduced to data points. If we cannot clearly define what creates love or long-term connection, it becomes difficult to determine whether an algorithm can successfully predict it.
-                </p>
-                <p><h4>Discussion Questions from our Presentation:</h4></p>
-                <p>
-                Why do relationships that begin on dating apps sometimes carry social stigma?
+This perspective suggests that while algorithms may help initiate encounters, they cannot replace the human process of creating meaning within relationships.
+</p>
 
-                Is a relationship formed through an algorithm less authentic than one formed through a chance meeting?
-                    
-                Have dating apps changed how people think about love and compatibility?
-                    
-                Does the concept of an algorithmic “match” influence how users evaluate potential partners?
-                    
-                If every profile on Tinder resulted in a match, would users continue using the app?</p>
-                <p><h4>Reflection on In-Class Discussion</h4></p>
-                <p>
-                Leading the discussion helped us think more critically about the relationship between algorithms and human connection.
+<h3>Reflection on Other Students' Projects</h3>
 
-                One point raised in class during discussion was that dating apps may not actually create connections but instead increase the probability of meeting people who might otherwise never cross paths. This idea reframed our thinking about the role of the algorithm. Rather than directly forming relationships, the algorithm functions more like a filter that expands who we interact with.
-                    
-                Someone else mentioned that dating apps change users' expectations of relationships by giving an endless stream of potential matches. This can create the perception that there is always someone better available, which may influence how users evaluate partners.
-                    
-                These discussions highlighted that the impact of dating apps may not lie solely in their algorithms, but in how they reshape social norms around relationships and compatibility.</p>
-            </div>
-        </div>
-        <div class="reflection-section">
-            <h3>Philosophical Framework NOT Covered in Classs</h3>
-            <p>
-            One philosophical perspective that extends this discussion is existentialism, particularly the idea that meaning is created through human choice rather than predetermined systems.
+<p>
+Other projects presented in class also influenced how I thought about everyday technology. One example was the project on the Oura Ring, which explored how wearable devices collect data and use models to interpret user movement and activity patterns. The project explained how the device builds a model to track movement and estimate things like sleep quality, steps, and overall health.
 
-            From an existentialist perspective, algorithms cannot determine meaningful relationships because meaning emerges through lived experiences and individual decisions. Even if an algorithm identifies statistically compatible individuals, the outcome of the relationship ultimately depends on the choices and interactions of the people involved.
-                
-            This perspective suggests that while algorithms may help initiate encounters, they cannot replace the human process of creating meaning within relationships.
-            </p>
-            <h3>Reflection on Other Students' Projects</h3>
-            <p>
-                Other projects presented in class also influenced how I thought about everyday technology. One example was the project on the Oura Ring, which explored how wearable devices collect data and use models to interpret user movement and activity patterns. The project explained how the device builds a model to track movement and estimate things like sleep quality, steps, and overall health.
+This made me think about how everyday technologies increasingly rely on data modeling to interpret human behavior. In the case of the Oura Ring, the system collects physical data such as movement and heart rate and uses algorithms to convert those signals into meaningful metrics about health. Similarly, Tinder's algorithm collects behavioral data such as swipes, matches, and profile interactions to build a model of user preferences.
 
-                This made me think about how everyday technologies increasingly rely on data modeling to interpret human behavior. In the case of the Oura Ring, the system collects physical data such as movement and heart rate and uses algorithms to convert those signals into meaningful metrics about health. Similarly, Tinder's algorithm collects behavioral data such as swipes, matches, and profile interactions to build a model of user preferences.
+Seeing the Oura Ring project highlighted how different technologies rely on similar computational ideas: turning human behavior into data that can be analyzed and predicted. However, it also made me think about the differences in purpose.
+</p>
 
-                Seeing the Oura Ring project highlighted how different technologies rely on similar computational ideas: turning human behavior into data that can be analyzed and predicted. However, it also made me think about the differences in purpose.
-            </p>
-            <h4>Citations</h4>
-            <ol>
-                <li>Wordie, Fred. 2020. “An Unscientific Investigation of Tinder's Algorithm.” Medium. AIxDESIGN. September 9, 2020. https://medium.com/aixdesign/an-unscientific-investigation-of-tinders-algorithm-2c086bf3deb4.</li>
-                <li>Spinney, Laura. 2024. “'The Science Isn't There': Do Dating Apps Really Help Us Find Our Soulmate?” The Observer, April 28, 2024, sec. Technology. https://www.theguardian.com/technology/2024/apr/28/the-science-isnt-there-do-dating-apps-really-help-us-find-our-soulmate.</li>
-            </ol>
-        </div>
+<h4>Citations</h4>
 
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<ol>
+<li>Wordie, Fred. 2020. “An Unscientific Investigation of Tinder's Algorithm.” Medium. AIxDESIGN. September 9, 2020. https://medium.com/aixdesign/an-unscientific-investigation-of-tinders-algorithm-2c086bf3deb4.</li>
+<li>Spinney, Laura. 2024. “'The Science Isn't There': Do Dating Apps Really Help Us Find Our Soulmate?” The Observer, April 28, 2024, sec. Technology. https://www.theguardian.com/technology/2024/apr/28/the-science-isnt-there-do-dating-apps-really-help-us-find-our-soulmate.</li>
+</ol>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
